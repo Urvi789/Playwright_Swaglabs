@@ -20,7 +20,7 @@ test.describe('Login feature to Swag Labs website', () => {
         await page.fill('#password', 'invalid_password');
         await page.click('#login-button');
         const errorMessage = await page.textContent('[data-test="error"]');
-        expect(errorMessage).toContain('Epic sadface: Username and password do not match any user in this service');
+        expect(errorMessage).toContain('Epic sadface: Username and password do not match any user in this service - Changing differently');
     })
     
 
